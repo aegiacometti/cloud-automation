@@ -5,7 +5,7 @@ import os
 import socket
 from pprint import pprint
 
-import python.aci_to_oci_w_terraform.modules.aci as aci
+import modules.aci as aci
 
 # ACI port names sometimes don't match the RFC.
 # Add to this dictionary different port number and names

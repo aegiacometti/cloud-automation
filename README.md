@@ -1,32 +1,24 @@
-# que hace el script
+### getTenantExportEpgSecutiry.py
+Script to connect to an Cisco ACI APIC, download a Tenant and export information:
 
-rules with no providers
+1.- to screen AEPg, EPG, provider/consumer, contract
 
-rules with no consumers
+2.- to screen Contract, Subject, Filter, Filter Name, ports, etc
 
-missing contracts
+3.- export to excel format the full combination of: AEPg, EPG, provider/consumer, contract, subject, filter and filter name, ports, etc
+ 
 
-missing filters
+### getTenantExportToOCI.py
+
+Script to connect to an Cisco ACI APIC, download a Tenant and export information
+to OCI and Terraform data structures.
+
+Cleaning rules, adaptations, warning.
 
 
+### Directories
+Modules: contains reusable modules for OCI and ACI
 
-# todo
+Data: contains the data to be uses with the scripts
 
-bidir
-
-borrar mas de 120
-
-verificar si hay algun EPG que consuma mas de 5 contratos / NSG
-
-para dtv reemplazar EGRESS por any 1 solo, y permitir ICMP en ambos sentidos any,
-luego mudarlo a SL en lugar de NSG
-
-veo solo EPG a EPG... pero cuando es un EPG relacionado a una subnet externa?
-
-* llega hasta 120 SR no importa si es Ingress o Egress ej.: AP-DTV-PROD-EPG-PCI_P_QAM-BD610
-
-* no es verdad que los NSG pueden apuntar a SL names
-
-sin aplicar las reglas son 4526
-filtrando egreess any e icmp in any quedan reglas xxx
-
+Check custom variables at the beginning of the scripts

@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 
 # Script to connect to an Cisco ACI APIC, download a Tenant and export information
-# 1.- to screen AEPg, EPG, provider/consumer, contract
-# 2.- to screen Contract, Subject, Filter, Filter Name, ports, etc
-# 3.- export to excel format the full combination of: AEPg, EPG, provider/consumer,
-#     contract, subject, filter and filter name, ports, etc
+# to OCI and Terraform data structures.
+# Cleaning rules and adaptations
 
 import json
 import os
@@ -13,8 +11,8 @@ import getpass
 from datetime import date
 from time import time, perf_counter
 
-import python.aci_to_oci_w_terraform.modules.aci as aci
-import python.aci_to_oci_w_terraform.modules.oci as oci
+import modules.aci as aci
+import modules.oci as oci
 
 _ACI_RELOGIN_TIMER = 55
 _DATA_DIR = './data/'

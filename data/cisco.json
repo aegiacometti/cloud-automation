@@ -1,0 +1,658 @@
+{
+  "totalCount": "1",
+  "imdata": [
+    {
+      "fvTenant": {
+        "attributes": {
+          "annotation": "",
+          "descr": "",
+          "dn": "uni/tn-Adrian",
+          "name": "Adrian",
+          "nameAlias": "",
+          "ownerKey": "",
+          "ownerTag": ""
+        },
+        "children": [
+          {
+            "vzBrCP": {
+              "attributes": {
+                "annotation": "",
+                "descr": "",
+                "name": "Adrian-Contract",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": "",
+                "prio": "unspecified",
+                "scope": "context",
+                "targetDscp": "unspecified"
+              },
+              "children": [
+                {
+                  "vzSubj": {
+                    "attributes": {
+                      "annotation": "",
+                      "consMatchT": "AtleastOne",
+                      "descr": "",
+                      "name": "Adrian-Contract-Subject",
+                      "nameAlias": "",
+                      "prio": "unspecified",
+                      "provMatchT": "AtleastOne",
+                      "revFltPorts": "yes",
+                      "targetDscp": "unspecified"
+                    },
+                    "children": [
+                      {
+                        "vzRsSubjFiltAtt": {
+                          "attributes": {
+                            "action": "permit",
+                            "annotation": "",
+                            "directives": "",
+                            "priorityOverride": "default",
+                            "tnVzFilterName": "Another_useless"
+                          }
+                        }
+                      },
+                      {
+                        "vzRsSubjFiltAtt": {
+                          "attributes": {
+                            "action": "permit",
+                            "annotation": "",
+                            "directives": "",
+                            "priorityOverride": "default",
+                            "tnVzFilterName": "Adrian-Filter"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vnsSvcCont": {
+              "attributes": {
+                "annotation": ""
+              }
+            }
+          },
+          {
+            "fvCtx": {
+              "attributes": {
+                "annotation": "",
+                "bdEnforcedEnable": "no",
+                "descr": "",
+                "ipDataPlaneLearning": "enabled",
+                "knwMcastAct": "permit",
+                "name": "Adrian-VRF-2",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": "",
+                "pcEnfDir": "ingress",
+                "pcEnfPref": "enforced"
+              },
+              "children": [
+                {
+                  "fvRsVrfValidationPol": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnL3extVrfValidationPolName": ""
+                    }
+                  }
+                },
+                {
+                  "vzAny": {
+                    "attributes": {
+                      "annotation": "",
+                      "descr": "",
+                      "matchT": "AtleastOne",
+                      "name": "",
+                      "nameAlias": "",
+                      "prefGrMemb": "disabled"
+                    }
+                  }
+                },
+                {
+                  "fvRsOspfCtxPol": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnOspfCtxPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsCtxToEpRet": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnFvEpRetPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsCtxToExtRouteTagPol": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnL3extRouteTagPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsBgpCtxPol": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnBgpCtxPolName": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "fvCtx": {
+              "attributes": {
+                "annotation": "",
+                "bdEnforcedEnable": "no",
+                "descr": "",
+                "ipDataPlaneLearning": "enabled",
+                "knwMcastAct": "permit",
+                "name": "Adrian-VRF-1",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": "",
+                "pcEnfDir": "ingress",
+                "pcEnfPref": "enforced"
+              },
+              "children": [
+                {
+                  "fvRsVrfValidationPol": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnL3extVrfValidationPolName": ""
+                    }
+                  }
+                },
+                {
+                  "vzAny": {
+                    "attributes": {
+                      "annotation": "",
+                      "descr": "",
+                      "matchT": "AtleastOne",
+                      "name": "",
+                      "nameAlias": "",
+                      "prefGrMemb": "disabled"
+                    }
+                  }
+                },
+                {
+                  "fvRsOspfCtxPol": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnOspfCtxPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsCtxToEpRet": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnFvEpRetPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsCtxToExtRouteTagPol": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnL3extRouteTagPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsBgpCtxPol": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnBgpCtxPolName": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "fvBD": {
+              "attributes": {
+                "OptimizeWanBandwidth": "no",
+                "annotation": "",
+                "arpFlood": "no",
+                "descr": "",
+                "epClear": "no",
+                "epMoveDetectMode": "",
+                "hostBasedRouting": "no",
+                "intersiteBumTrafficAllow": "no",
+                "intersiteL2Stretch": "no",
+                "ipLearning": "yes",
+                "limitIpLearnToSubnets": "yes",
+                "llAddr": "::",
+                "mac": "00:22:BD:F8:19:FF",
+                "mcastAllow": "no",
+                "multiDstPktAct": "bd-flood",
+                "name": "Adrian-BD-2",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": "",
+                "type": "regular",
+                "unicastRoute": "yes",
+                "unkMacUcastAct": "proxy",
+                "unkMcastAct": "flood",
+                "v6unkMcastAct": "flood",
+                "vmac": "not-applicable"
+              },
+              "children": [
+                {
+                  "fvRsMldsn": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnMldSnoopPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsIgmpsn": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnIgmpSnoopPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsCtx": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnFvCtxName": "Adrian-VRF-2"
+                    }
+                  }
+                },
+                {
+                  "fvRsBdToEpRet": {
+                    "attributes": {
+                      "annotation": "",
+                      "resolveAct": "resolve",
+                      "tnFvEpRetPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsBDToNdP": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnNdIfPolName": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "fvBD": {
+              "attributes": {
+                "OptimizeWanBandwidth": "no",
+                "annotation": "",
+                "arpFlood": "no",
+                "descr": "",
+                "epClear": "no",
+                "epMoveDetectMode": "",
+                "hostBasedRouting": "no",
+                "intersiteBumTrafficAllow": "no",
+                "intersiteL2Stretch": "no",
+                "ipLearning": "yes",
+                "limitIpLearnToSubnets": "yes",
+                "llAddr": "::",
+                "mac": "00:22:BD:F8:19:FF",
+                "mcastAllow": "no",
+                "multiDstPktAct": "bd-flood",
+                "name": "Adrian-BD-1",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": "",
+                "type": "regular",
+                "unicastRoute": "yes",
+                "unkMacUcastAct": "proxy",
+                "unkMcastAct": "flood",
+                "v6unkMcastAct": "flood",
+                "vmac": "not-applicable"
+              },
+              "children": [
+                {
+                  "fvSubnet": {
+                    "attributes": {
+                      "annotation": "",
+                      "ctrl": "",
+                      "descr": "",
+                      "ip": "10.0.1.1/24",
+                      "name": "",
+                      "nameAlias": "",
+                      "preferred": "no",
+                      "scope": "private",
+                      "virtual": "no"
+                    }
+                  }
+                },
+                {
+                  "fvRsMldsn": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnMldSnoopPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsIgmpsn": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnIgmpSnoopPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsCtx": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnFvCtxName": "Adrian-VRF-1"
+                    }
+                  }
+                },
+                {
+                  "fvRsBdToEpRet": {
+                    "attributes": {
+                      "annotation": "",
+                      "resolveAct": "resolve",
+                      "tnFvEpRetPolName": ""
+                    }
+                  }
+                },
+                {
+                  "fvRsBDToNdP": {
+                    "attributes": {
+                      "annotation": "",
+                      "tnNdIfPolName": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vzFilter": {
+              "attributes": {
+                "annotation": "",
+                "descr": "",
+                "name": "Another_useless",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": ""
+              },
+              "children": [
+                {
+                  "vzEntry": {
+                    "attributes": {
+                      "annotation": "",
+                      "applyToFrag": "no",
+                      "arpOpc": "unspecified",
+                      "dFromPort": "ftpData",
+                      "dToPort": "21",
+                      "descr": "",
+                      "etherT": "ip",
+                      "icmpv4T": "unspecified",
+                      "icmpv6T": "unspecified",
+                      "matchDscp": "unspecified",
+                      "name": "SCP",
+                      "nameAlias": "",
+                      "prot": "tcp",
+                      "sFromPort": "unspecified",
+                      "sToPort": "unspecified",
+                      "stateful": "yes",
+                      "tcpRules": "est"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vzFilter": {
+              "attributes": {
+                "annotation": "",
+                "descr": "",
+                "name": "Adrian-Filter",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": ""
+              },
+              "children": [
+                {
+                  "vzEntry": {
+                    "attributes": {
+                      "annotation": "",
+                      "applyToFrag": "no",
+                      "arpOpc": "unspecified",
+                      "dFromPort": "http",
+                      "dToPort": "http",
+                      "descr": "",
+                      "etherT": "ip",
+                      "icmpv4T": "unspecified",
+                      "icmpv6T": "unspecified",
+                      "matchDscp": "unspecified",
+                      "name": "Adrian-Filter-http",
+                      "nameAlias": "",
+                      "prot": "tcp",
+                      "sFromPort": "unspecified",
+                      "sToPort": "unspecified",
+                      "stateful": "yes",
+                      "tcpRules": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "fvRsTenantMonPol": {
+              "attributes": {
+                "annotation": "",
+                "tnMonEPGPolName": ""
+              }
+            }
+          },
+          {
+            "fvAp": {
+              "attributes": {
+                "annotation": "",
+                "descr": "",
+                "name": "Adrian-App-Profile-1",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": "",
+                "prio": "unspecified"
+              },
+              "children": [
+                {
+                  "fvAEPg": {
+                    "attributes": {
+                      "annotation": "",
+                      "descr": "",
+                      "exceptionTag": "",
+                      "floodOnEncap": "disabled",
+                      "fwdCtrl": "",
+                      "hasMcastSource": "no",
+                      "isAttrBasedEPg": "no",
+                      "matchT": "AtleastOne",
+                      "name": "APP",
+                      "nameAlias": "",
+                      "pcEnfPref": "unenforced",
+                      "prefGrMemb": "exclude",
+                      "prio": "unspecified",
+                      "shutdown": "no"
+                    },
+                    "children": [
+                      {
+                        "fvRsPathAtt": {
+                          "attributes": {
+                            "annotation": "",
+                            "descr": "",
+                            "encap": "vlan-4001",
+                            "instrImedcy": "lazy",
+                            "mode": "regular",
+                            "primaryEncap": "unknown",
+                            "tDn": "topology/pod-1/paths-102/pathep-[eth1/59]"
+                          }
+                        }
+                      },
+                      {
+                        "fvRsDomAtt": {
+                          "attributes": {
+                            "annotation": "",
+                            "bindingType": "none",
+                            "classPref": "encap",
+                            "delimiter": "",
+                            "encap": "unknown",
+                            "encapMode": "auto",
+                            "epgCos": "Cos0",
+                            "epgCosPref": "disabled",
+                            "instrImedcy": "lazy",
+                            "lagPolicyName": "",
+                            "netflowDir": "both",
+                            "netflowPref": "disabled",
+                            "numPorts": "0",
+                            "portAllocation": "none",
+                            "primaryEncap": "unknown",
+                            "primaryEncapInner": "unknown",
+                            "resImedcy": "lazy",
+                            "secondaryEncapInner": "unknown",
+                            "switchingMode": "native",
+                            "tDn": "uni/phys-Adrian-Physical-Domain"
+                          }
+                        }
+                      },
+                      {
+                        "fvRsCons": {
+                          "attributes": {
+                            "annotation": "",
+                            "prio": "unspecified",
+                            "tnVzBrCPName": "Adrian-Contract"
+                          }
+                        }
+                      },
+                      {
+                        "fvRsCustQosPol": {
+                          "attributes": {
+                            "annotation": "",
+                            "tnQosCustomPolName": ""
+                          }
+                        }
+                      },
+                      {
+                        "fvRsBd": {
+                          "attributes": {
+                            "annotation": "",
+                            "tnFvBDName": "Adrian-BD-1"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "fvAEPg": {
+                    "attributes": {
+                      "annotation": "",
+                      "descr": "",
+                      "exceptionTag": "",
+                      "floodOnEncap": "disabled",
+                      "fwdCtrl": "",
+                      "hasMcastSource": "no",
+                      "isAttrBasedEPg": "no",
+                      "matchT": "AtleastOne",
+                      "name": "WEB",
+                      "nameAlias": "",
+                      "pcEnfPref": "unenforced",
+                      "prefGrMemb": "exclude",
+                      "prio": "unspecified",
+                      "shutdown": "no"
+                    },
+                    "children": [
+                      {
+                        "fvRsProv": {
+                          "attributes": {
+                            "annotation": "",
+                            "matchT": "AtleastOne",
+                            "prio": "unspecified",
+                            "tnVzBrCPName": "Adrian-Contract"
+                          }
+                        }
+                      },
+                      {
+                        "fvRsPathAtt": {
+                          "attributes": {
+                            "annotation": "",
+                            "descr": "",
+                            "encap": "vlan-4000",
+                            "instrImedcy": "lazy",
+                            "mode": "regular",
+                            "primaryEncap": "unknown",
+                            "tDn": "topology/pod-1/paths-102/pathep-[eth1/58]"
+                          }
+                        }
+                      },
+                      {
+                        "fvRsDomAtt": {
+                          "attributes": {
+                            "annotation": "",
+                            "bindingType": "none",
+                            "classPref": "encap",
+                            "delimiter": "",
+                            "encap": "unknown",
+                            "encapMode": "auto",
+                            "epgCos": "Cos0",
+                            "epgCosPref": "disabled",
+                            "instrImedcy": "lazy",
+                            "lagPolicyName": "",
+                            "netflowDir": "both",
+                            "netflowPref": "disabled",
+                            "numPorts": "0",
+                            "portAllocation": "none",
+                            "primaryEncap": "unknown",
+                            "primaryEncapInner": "unknown",
+                            "resImedcy": "lazy",
+                            "secondaryEncapInner": "unknown",
+                            "switchingMode": "native",
+                            "tDn": "uni/phys-Adrian-Physical-Domain"
+                          }
+                        }
+                      },
+                      {
+                        "fvRsCustQosPol": {
+                          "attributes": {
+                            "annotation": "",
+                            "tnQosCustomPolName": ""
+                          }
+                        }
+                      },
+                      {
+                        "fvRsBd": {
+                          "attributes": {
+                            "annotation": "",
+                            "tnFvBDName": "Adrian-BD-1"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
