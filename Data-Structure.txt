@@ -1,0 +1,73 @@
+ACI_AEP_list = [
+    ["AEP-Name",
+     [
+         ["EPG-Name",
+          ["Provided_Contract_Name_1", "Provided_Contract_Names_2"],
+          ["Consumed_Contract_Names_1", "Consumed_Contract_Names_2"]
+          ],
+         ["EPG-Name",
+          ["Provided_Contract_Name_1", "Provided_Contract_Names_2"],
+          ["Consumed_Contract_Names_1", "Consumed_Contract_Names_2"]
+          ]
+     ]
+     ]
+]
+
+ACI_Contract_dict = {
+    "Contract_Name_1": [["Subject_Name_1", "yes", "permit", "Filter_name"],
+                        ["Subject_Name_2", "yes", "permit", "Filter_name"]],
+    "Contract_Name_2": [["Subject_Name_1", "yes", "permit", "Filter_name"],
+                        ["Subject_Name_2", "yes", "permit", "Filter_name"]]
+}
+
+ACI_Filter_dict = {
+    "Filter_name_1": [["Filter_Entry_Name_1", "tcp", "8020", "8085", "yes"],
+                      ["Filter_Entry_Name_2", "tcp", "1433", "1700", "yes"]],
+    "Filter_name_2": [["Filter_Entry_Name_1", "tcp", "8020", "8085", "yes"],
+                      ["Filter_Entry_Name_2", "tcp", "1433", "1700", "yes"]],
+}
+
+OCI_NSG = {
+    "display_name": {
+        "freeform_tags": ["key", "value"],
+        "resources": [
+            {
+                "network_security_group_security_rule_direction": {
+                    "//": "# EGRESS, INGRESS",
+                    "default": "EGRESS"
+                },
+
+                "network_security_group_security_rule_protocol": {
+                    "//": "ICMP (1), TCP (6), UDP (17), and ICMPv6 (58)",
+                    "default": "6"
+                },
+
+                "network_security_group_security_rule_description": {
+                    "default": "server web"
+                },
+
+                "network_security_group_security_rule_destination": {
+                    "//": "CIDR, Service, NSG_name",
+                    "default": "10.10.10.10/32"
+                },
+
+                "network_security_group_security_rule_destination_type": {
+                    "//": "CIDR_BLOCK, SERVICE_CIDR_BLOCK, NETWORK_SECURITY_GROUP",
+                    "default": "CIDR_BLOCK"
+                },
+
+                "network_security_group_security_rule_stateless": {
+                    "//": "false or true",
+                    "default": "false"
+                },
+
+                "network_security_group_security_rule_tcp_options_destination_port_range_max": {
+                    "default": "8080"
+                },
+
+                "network_security_group_security_rule_tcp_options_destination_port_range_min": {
+                    "default": "8080"
+                }
+            }],
+    }
+},
