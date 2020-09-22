@@ -16,6 +16,14 @@ to OCI and Terraform data structures.
 Cleaning rules, adaptations, warning.
 
 
+### aci_to_chat.py
+Script to send ACI faults and events to Slack or WebEx Teams.
+
+
+### duplicateTenant.py
+Connect to APIC and duplicate a tenant.
+
+
 ### Directories
 Modules: contains reusable modules for OCI and ACI
 
