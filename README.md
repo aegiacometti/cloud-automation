@@ -1,4 +1,4 @@
-### getTenantExportEpgSecutiry.py
+### getTenantExportEpgSecurity.py
 Script to connect to an Cisco ACI APIC, download a Tenant and export information:
 
 1.- to screen AEPg, EPG, provider/consumer, contract
