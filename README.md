@@ -5,6 +5,8 @@ to OCI and Terraform data structures.
 
 Cleaning rules, adaptations, warning and error messages.
 
+Check the video at https://youtu.be/aHDO0EOuCHs
+
 
 ### getTenantExportEpgSecurity.py
 Script to connect to an Cisco ACI APIC, download a Tenant and export information:
