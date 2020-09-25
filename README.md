@@ -1,3 +1,11 @@
+### getTenantExportToOCI.py
+
+Script to connect to an Cisco ACI APIC, download a Tenant and export information
+to OCI and Terraform data structures.
+
+Cleaning rules, adaptations, warning and error messages.
+
+
 ### getTenantExportEpgSecurity.py
 Script to connect to an Cisco ACI APIC, download a Tenant and export information:
 
@@ -7,14 +15,6 @@ Script to connect to an Cisco ACI APIC, download a Tenant and export information
 
 3.- export to excel format the full combination of: AEPg, EPG, provider/consumer, contract, subject, filter and filter name, ports, etc
  
-
-### getTenantExportToOCI.py
-
-Script to connect to an Cisco ACI APIC, download a Tenant and export information
-to OCI and Terraform data structures.
-
-Cleaning rules, adaptations, warning.
-
 
 ### aci_to_chat.py
 Script to send ACI faults and events to Slack or WebEx Teams.
